@@ -4,8 +4,7 @@ const queries = require('../db/queries');
 const path = require('path')
 
 router.get('/', (req, res) => {
-  queries.article .list()
-  .then((data) => res.json(data))
+  queries.article.list().then((data) => res.json(data))
 })
 
 
