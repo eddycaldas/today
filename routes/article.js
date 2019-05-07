@@ -5,9 +5,7 @@ const path = require('path')
 
 router.get('/', (req, res) => {
   queries.article .list()
-  .then((data) => {
-    res.json((data))
-  })
+  .then((data) => res.json(data)
 })
 
 

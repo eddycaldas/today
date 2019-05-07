@@ -1,8 +1,8 @@
-const knex = require('./knex');
+const knex = require('./');
 
 module.exports = {
   article: {
-    list: function() {
+    list() {
       return knex('article')
     }
   }
