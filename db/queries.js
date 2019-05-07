@@ -2,7 +2,7 @@ const knex = require('./knex');
 
 module.exports = {
   article: {
-    getAll: function() {
+    list: function() {
       return knex('article')
     }
   }
